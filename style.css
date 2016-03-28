@@ -1,0 +1,111 @@
+html, body{
+	margin: 0;
+	font-family: Arial, sans-serif;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	color: #ccc;
+}
+
+.left{
+	position: absolute;
+	left: 0;
+}
+.right{
+	position: absolute;
+	right: 0;
+}
+.bottom{
+	position: absolute;
+	bottom: 0;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-7, .col-8, .col-9, .col-10, .col-11, .col-12,
+.row-1, .row-2, .row-3, .row-4, .row-5, .row-6,
+.row-7, .row-8, .row-9, .row-10, .row-11, .row-12{
+	box-sizing: border-box;
+}
+
+.col-1{width: 8.3333%;}
+.col-2{width: 16.6666%;}
+.col-3{width: 25%;}
+.col-4{width: 33.3333%;}
+.col-5{width: 41.6666%;}
+.col-6{width: 50%;}
+.col-7{width: 58.3333%;}
+.col-8{width: 66.6666%;}
+.col-9{width: 75%;}
+.col-10{width: 83.3333%;}
+.col-11{width: 91.6666%;}
+.col-12{width: 100%;}
+
+.row-1{height: 6.25%;}
+.row-2{height: 12.5%;}
+.row-3{height: 18.75%;}
+.row-4{height: 25%;}
+.row-5{height: 31.25%;}
+.row-6{height: 37.5%;}
+.row-7{height: 43.75%;}
+.row-8{height: 50%;}
+.row-9{height: 56.25%;}
+.row-10{height: 62.5%;}
+.row-11{height: 68.75%;}
+.row-12{height: 75%;}
+
+#footer, #menu{
+	height: 24px;
+	background: #444;
+	color: #ccc;
+}
+
+#footer div, #menu div{
+	float:left;
+	border-right: 1px solid #ccc;
+	padding: 2px 1%;
+}
+
+#control div.btn.active{
+	background: #777;
+}
+
+#footer div:hover, #menu div:hover, #control div.btn:hover{
+	background: #666;
+	cursor: pointer;
+}
+
+#body{
+	position: absolute;
+	top: 24px;
+	bottom: 24px;
+	left: 0;
+	right: 0;
+	background: #555;
+}
+
+#scene, #control{
+	height: 100%;
+}
+
+.btn{
+	text-align: center;
+	display: table;
+	border: 1px solid #ccc;
+	width: 100%;
+}
+.btn span{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#choose{
+	border-top-right-radius: 1em;
+}
+#image-choice{
+	display: none;
+}
+
+#render{
+	border-bottom-right-radius: 1em;
+}

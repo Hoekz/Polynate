@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Polynate</title>
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<div id="menu" class="top col-12">
+		<div id="menu-file" class="col-1">File</div>
+		<div id="menu-edit" class="col-1">Edit</div>
+		<div id="menu-view" class="col-1">View</div>
+		<div id="menu-help" class="col-1">Help</div>
+	</div>
+	<div id="body">
+		<div class="left col-1" id="control">
+			<div class="row-2"></div>
+			<div class="btn single row-1" 
+				 id="choose"
+				 title="Choose an image to use as a reference."
+			>
+				<span>Choose</span>
+				<input type="file" accept="image/*" id="image-choice"/>
+			</div>
+			<div class="btn active row-1"
+				 id="edit"
+				 title="Add and move points on scene."
+			><span>Edit</span></div>
+			<div class="btn row-1"
+				 id="erase"
+				 title="Remove points from scene."
+			><span>Eraser</span></div>
+			<div class="btn row-1"
+				 id="navigate"
+				 title="Move and zoom on scene."
+			><span>Move</span></div>
+			<div class="btn single row-1"
+				 id="clear"
+				 title="Clear all points in scene."
+			><span>Clear</span></div>
+			<div class="btn row-1"
+				 id="render"
+				 title="Render current scene."
+			><span>Render</span></div>
+		</div>
+		<div class="right col-11" id="scene">
+			<!--insert scene here-->
+		</div>
+	</div>
+	<div class="bottom col-12" id="footer">
+		<div id="status" class="col-4">Status:</div>
+		<div id="position" class="col-2">Pos:</div>
+		<div id="point-count" class="col-2">Points:</div>
+	</div>
+	<script src="pixi.js"></script>
+	<script src="controller.js"></script>
+	<script src="view.js"></script>
+	<script src="polynate.js"></script>
+	<script src="triangle-contains.js"></script>
+</body>
+</html>
